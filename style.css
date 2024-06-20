@@ -163,7 +163,7 @@ main {
   border-radius: 35px;
   position: fixed;
   bottom: 27px;
-  left: calc(44% - 18px);
+  left: calc(45% - 20px);
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -210,10 +210,10 @@ main {
 }
 
 .info__container {
-  margin: 2svh 1svh;
+  margin: 2svh 4svh;
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5svh;
+  gap: 4.5svh;
 }
 
 .info__column {
