@@ -508,6 +508,12 @@ main {
   }
 }
 
+@media (max-width:710px) {
+  .dual__column {
+    margin: 10svh 0svh 15svh 0svh
+  }
+}
+
 @media (max-width: 490px) {
   .header__items {
     flex-direction: column;
