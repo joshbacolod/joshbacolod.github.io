@@ -210,7 +210,7 @@ main {
 }
 
 .info__container {
-  margin: 2svh 4svh;
+  margin: 0svh 3svh;
   display: flex;
   flex-wrap: wrap;
   gap: 10svh;
@@ -344,7 +344,7 @@ main {
 }
 
 .contacts__banner {
-  border: solid var(--card-color) 1.5px;
+  border: solid var(--card-color) 2px;
   margin: 3svh 20svh;
   padding: 4svh 6svh 3svh 6svh;
   border-radius: 45px;
