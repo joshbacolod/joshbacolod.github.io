@@ -210,10 +210,10 @@ main {
 }
 
 .info__container {
-  margin: 2svh 6svh;
+  margin: 2svh 4svh;
   display: flex;
   flex-wrap: wrap;
-  gap: 7svh;
+  gap: 10svh;
 }
 
 .info__column {
