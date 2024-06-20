@@ -499,12 +499,12 @@ main {
 
 @media (max-width:1000px) {
   img {
-    width: 99%;
+    width: 95%;
   }
 
   .popup img{
     max-height: 550px;
-    width: 99%;
+    width: 95%;
   }
 }
 
