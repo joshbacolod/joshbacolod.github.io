@@ -213,7 +213,7 @@ main {
   margin: 0svh 3svh;
   display: flex;
   flex-wrap: wrap;
-  gap: 10svh;
+  column-gap: 10svh;
 }
 
 .info__column {
