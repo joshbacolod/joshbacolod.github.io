@@ -39,10 +39,8 @@ const navbar = document.querySelector(".header__items")
 window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY
     if (currentScrollY > lastScrollY) {
-        console.log("scroll down")
         navbar.classList.add("hide");
     } else {
-        console.log("scroll up")
         navbar.classList.remove("hide");
     }
     lastScrollY = window.scrollY  
