@@ -267,6 +267,10 @@ main {
   height: 20svh;
 }
 
+.card li {
+  line-height: 5svh;
+}
+
 .goal p {
   line-height: 3.9svh;
   letter-spacing: 0.6px;
