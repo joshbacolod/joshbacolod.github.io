@@ -504,6 +504,7 @@ main {
 
   .popup img{
     max-height: 650px;
+    max-width: auto;
   }
 }
 
