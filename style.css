@@ -115,7 +115,7 @@ main {
 }
 
 .dual__column {
-  margin: 7svh 7svh 15svh 7svh;
+  margin: 10svh 7svh 15svh 7svh;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -210,10 +210,10 @@ main {
 }
 
 .info__container {
-  margin: 2svh 4svh;
+  margin: 2svh 6svh;
   display: flex;
   flex-wrap: wrap;
-  gap: 4.5svh;
+  gap: 7svh;
 }
 
 .info__column {
@@ -394,7 +394,7 @@ main {
 }
 
 .popup img{
-  height: 500px;
+  height: 650px;
   position: absolute;
   top: 55%;
   left: 50%;
