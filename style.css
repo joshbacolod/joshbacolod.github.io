@@ -522,6 +522,12 @@ main {
   }
 }
 
+@media (max-width:600px) {
+  .btn__download {
+    left: calc(40% - 20px);
+  }
+}
+
 @media (max-width: 490px) {
   .header__items {
     flex-direction: column;
