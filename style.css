@@ -178,7 +178,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 5svh 0;
-  row-gap: 2svh;
+  gap: 2.5svh;
 }
 
 .socials {
