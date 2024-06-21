@@ -503,6 +503,13 @@ main {
   }
 
   .popup img{
+    height: 650px;
+    width: auto;
+  }
+}
+
+@media (max-width:900px) {
+  .popup img {
     height: auto;
     width: 95%;
   }
