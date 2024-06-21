@@ -423,6 +423,7 @@ main {
   color: var(--footer-color);
   display: flex;
   justify-content: space-between;
+  column-gap: 4svh;
 }
 
 .footer__nav {
