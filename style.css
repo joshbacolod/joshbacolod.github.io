@@ -164,7 +164,7 @@ main {
   border-radius: 35px;
   position: fixed;
   bottom: 27px;
-  left: calc(45% - 20px);
+  left: calc(48% - 60px);
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -520,9 +520,6 @@ main {
   .dual__column {
     margin: 10svh 0svh 15svh 0svh
   }
-
-  .btn__download {
-    left: calc(40% - 20px);
 }
 
 
