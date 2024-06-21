@@ -520,13 +520,11 @@ main {
   .dual__column {
     margin: 10svh 0svh 15svh 0svh
   }
-}
 
-@media (max-width:600px) {
   .btn__download {
     left: calc(40% - 20px);
-  }
 }
+
 
 @media (max-width: 490px) {
   .header__items {
