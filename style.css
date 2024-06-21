@@ -349,7 +349,6 @@ main {
 
 .contacts__banner {
   border: solid var(--card-color) 2px;
-  margin: 3svh 20svh;
   padding: 4svh 6svh 3svh 6svh;
   border-radius: 45px;
   display: flex;
