@@ -503,8 +503,8 @@ main {
   }
 
   .popup img{
-    max-height: 650px;
-    max-width: auto;
+    height: auto;
+    width: 95%;
   }
 }
 
@@ -527,5 +527,9 @@ main {
 
   a.btn {
     font-size: 12px;
+  }
+
+  .popup span {
+    top: 18svh;
   }
 }
