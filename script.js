@@ -51,6 +51,3 @@ document.addEventListener("keydown", function(event) {
     closePopup();
   }
 })
-
-
-console.log("test")
