@@ -2,12 +2,14 @@
   --color-1: #000000;
   --color-2: #EEEEEE;
   --color-bg: #1b1f23;
-  --accent-color: #7E30E1;
+  --accent-color: #A294F9;
   --card-color: #2d3237;
   --effect-color: #8f9297;
   --footer-color: #595d61;
   --margin: 7svh 7svh 17svh 7svh
 }
+
+/* #7E30E1 */
 
 * {
   margin: 0;
@@ -483,6 +485,12 @@ main {
 
 .ref__link:hover {
   color: var(--effect-color);
+}
+
+#about {
+  background-color: var(--card-color);
+  margin: 0;
+  padding: 1svh  0 5svh 0;
 }
 
 @keyframes fade-up {
