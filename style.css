@@ -368,12 +368,11 @@ main {
 }
 
 .active {
-  display: flex;
+  display: block;
 }
 
 .inactive {
   display: none;
-  opacity: 0;
 }
 
 .contacts-container {
