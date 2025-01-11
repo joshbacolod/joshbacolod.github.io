@@ -347,7 +347,14 @@ main {
   box-shadow: 0 0 6px;
 }
 
-.contacts {
+.projects-container {
+  margin: var(--margin);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.contacts-container {
   margin: var(--margin);
   display: flex;
   flex-direction: column;
@@ -355,7 +362,7 @@ main {
   align-content: center;
 }
 
-.contacts h1 {
+.contacts-container h2 {
   text-align: center;
 }
 
