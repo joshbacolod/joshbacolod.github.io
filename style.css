@@ -44,6 +44,14 @@ h1 {
 }
 
 h2 {
+  padding: 6svh 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 5.5svh;
+}
+
+h3 {
   padding: 1svh 0;
   font-size: 24px;
   font-weight: 600;
@@ -258,7 +266,7 @@ main {
   transition: all 0.5s ease;
 }
 
-.card h2 {
+.card h3 {
   padding: 7svh 0;
   text-align: center;
   font-weight: 700;
@@ -377,7 +385,7 @@ main {
   flex-wrap: wrap;
 }
 
-.contacts__item h3 {
+.contacts__item h4 {
   color: var(--accent-color);
   padding-bottom: 1svh;
 }
@@ -491,7 +499,7 @@ main {
 #about {
   background-color: var(--card-color);
   margin: 0;
-  padding: 1svh  0 5svh 0;
+  padding: 5svh  0;
 }
 
 @keyframes fade-up {
