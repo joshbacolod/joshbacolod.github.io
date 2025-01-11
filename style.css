@@ -347,7 +347,7 @@ main {
   box-shadow: 0 0 6px;
 }
 
-.projects-container {
+.projects-section {
   margin: var(--margin);
   display: flex;
   flex-direction: column;
@@ -367,13 +367,17 @@ main {
   gap: 5svh;
 }
 
+.project {
+  display: none;
+}
+
 .active {
   display: block;
 }
 
-.inactive {
+/* .inactive {
   display: none;
-}
+} */
 
 .contacts-container {
   margin: var(--margin);
