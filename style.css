@@ -354,10 +354,25 @@ main {
   align-items: center;
 }
 
+.project {
+  max-width: 120svh;
+  padding: 5svh 8svh;
+  border: solid var(--card-color) 2px;
+  border-radius: 45px;
+}
+
 .slide-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 5svh;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
 }
 
 .contacts-container {
