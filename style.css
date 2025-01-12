@@ -369,7 +369,7 @@ main {
 
 .project {
   display: none;
-  /* animation: fade-up 0.7s ease; */
+  animation: fade-up 0.7s ease;
 }
 
 .proj-btn {
@@ -410,7 +410,6 @@ main {
 
 .active {
   display: block;
-  animation: fade-up 0.7s ease;
 }
 
 /* .slide-out {
