@@ -372,6 +372,10 @@ main {
   animation: fade-up 0.7s ease;
 }
 
+.project h3 {
+  margin-bottom: 1.5svh;
+}
+
 .proj-btn {
   padding: 0 2svh;
   border: none;
