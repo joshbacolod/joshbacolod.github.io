@@ -410,7 +410,7 @@ main {
 
 .active {
   display: block;
-  animation: slide-in 0.7s ease;
+  animation: fade-up 0.7s ease;
 }
 
 .slide-out {
@@ -585,7 +585,7 @@ main {
   }
 }
 
-@keyframes slide-in {
+/* @keyframes slide-in {
   0% {
     opacity: 0;
     transform: translateX(50%) scale(0.7);
@@ -615,7 +615,7 @@ main {
     opacity: 0;
     transform: translateX(-50%) scale(0.7);
   }
-}
+} */
 
 @media (max-width:1000px) {
   img {
