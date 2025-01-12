@@ -364,20 +364,58 @@ main {
 .slide-container {
   display: flex;
   /* align-items: center; */
-  gap: 5svh;
+  gap: 2.5svh;
 }
 
 .project {
   display: none;
+  /* animation: fade-up 0.7s ease; */
+}
+
+.proj-btn {
+  padding: 0 2svh;
+  border: none;
+  border-radius: 8px;
+  color: var(--accent-color);
+  transition: all 0.4s ease;
+}
+
+.proj-btn:hover {
+  cursor: pointer;
+}
+
+.prev-btn {
+  padding-left: 5svh;
+  background-size: 300%;
+  background-image: linear-gradient(to right, var(--color-bg) 35%, var(--card-color), var(--color-bg));
+  background-position: left;
+  transition: background-position 0.7s ease;
+}
+
+.prev-btn:hover {
+  background-position: right;
+}
+
+.next-btn {
+  padding-right: 5svh;
+  background-size: 300%;
+  background-image: linear-gradient(to left, var(--color-bg) 35%, var(--card-color), var(--color-bg));
+  background-position: right;
+  transition: background-position 0.7s ease;
+}
+
+.next-btn:hover {
+  background-position: left;
 }
 
 .active {
   display: block;
+  animation: slide-in 0.7s ease;
 }
 
-/* .inactive {
-  display: none;
-} */
+.slide-out {
+  animation: slide-out 0.6 ease;
+}
 
 .contacts-container {
   margin: var(--margin);
@@ -544,6 +582,38 @@ main {
   100% {
     opacity: 1;
     transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(50%) scale(0.7);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.7);
   }
 }
 

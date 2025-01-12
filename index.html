@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios,arrow_forward_ios" />
   </head>
   <body>
     <header>
@@ -194,7 +195,9 @@
       <section class="projects-section hidden" id="projects">
         <h2>Projects</h2>
         <div class="slide-container">
-          <button onclick="prev()">Prev</button>
+          <button class="proj-btn prev-btn" onclick="prev()">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+          </button>
           <div class="project-container">
             <div class="project active">
               <h3><a>Password Generator</a></h3>
@@ -205,7 +208,9 @@
               <p>A simple password generator that generates two random passwords for your use! Offers basic options such as typical password lengths, to include symbols and to include numbers. Click here to visit the site</p>
             </div>
           </div>
-          <button onclick="next()">Next</button>
+          <button class="proj-btn next-btn" onclick="next()">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+          </button>
         </div>
       </section>
 
