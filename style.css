@@ -413,9 +413,9 @@ main {
   animation: fade-up 0.7s ease;
 }
 
-.slide-out {
+/* .slide-out {
   animation: slide-out 0.6 ease;
-}
+} */
 
 .contacts-container {
   margin: var(--margin);
