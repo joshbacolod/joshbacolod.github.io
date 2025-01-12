@@ -2,12 +2,14 @@
   --color-1: #000000;
   --color-2: #EEEEEE;
   --color-bg: #1b1f23;
-  --accent-color: #7E30E1;
+  --accent-color: #A294F9;
   --card-color: #2d3237;
   --effect-color: #8f9297;
   --footer-color: #595d61;
   --margin: 7svh 7svh 17svh 7svh
 }
+
+/* #7E30E1 */
 
 * {
   margin: 0;
@@ -35,19 +37,31 @@ html {
 
 h1 {
   padding: 6svh 0;
-  font-size: 36px;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--accent-color);
   line-height: 5.5svh;
 }
 
 h2 {
+  padding: 6svh 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 5.5svh;
+}
+
+h3 {
   padding: 1svh 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--accent-color);
 }
 
+p a {
+  color: var(--accent-color);
+  font-weight: 500;
+}
 
 header a {
   height: 100%;
@@ -188,7 +202,7 @@ main {
 }
 
 .emoji {
-  font-size: 4svh;
+  font-size: 1.6rem;
 }
 
 .profile__img {
@@ -220,14 +234,14 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size: 14px;
+  font-size: 0.95rem;
 }
 
 .info__container h3 {
   padding: 2svh 0;
   color: var(--accent-color);
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .card__banner {
@@ -256,7 +270,7 @@ main {
   transition: all 0.5s ease;
 }
 
-.card h2 {
+.card h3 {
   padding: 7svh 0;
   text-align: center;
   font-weight: 700;
@@ -287,11 +301,12 @@ main {
 
 .content__hidden {
   background-color: var(--accent-color);
+  color: var(--color-bg);
   padding: 0svh 2.5svh;
   height: 56svh;
   width: 44svh;
   border-radius: 5svh;
-  font-size: 14px;
+  font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -306,6 +321,7 @@ main {
 .tech__stack li {
   display: flex;
   align-items: center;
+  font-size: 1rem;
   height: 5svh;
 }
 
@@ -313,7 +329,7 @@ main {
   padding: 0 2svh;
   line-height: 4svh;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.95rem;
 }
 
 .content__hidden a {
@@ -335,7 +351,102 @@ main {
   box-shadow: 0 0 6px;
 }
 
-.contacts {
+.projects-section {
+  margin: var(--margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  max-width: 120svh;
+  padding: 5svh 8svh;
+  border: solid var(--card-color) 2px;
+  border-radius: 45px;
+}
+
+.slide-container {
+  display: flex;
+  /* align-items: center; */
+  gap: 2.5svh;
+}
+
+.project {
+  display: none;
+  animation: fade-up 0.7s ease;
+}
+
+.project h3 {
+  margin-bottom: 1.5svh;
+}
+
+.proj-btn {
+  padding: 0 2svh;
+  border: none;
+  border-radius: 8px;
+  color: var(--accent-color);
+  transition: all 0.4s ease;
+}
+
+.proj-btn:hover {
+  cursor: pointer;
+}
+
+.prev-btn {
+  padding-left: 5svh;
+  background-size: 300%;
+  background-image: linear-gradient(to right, var(--color-bg) 35%, var(--card-color), var(--color-bg));
+  background-position: left;
+  transition: background-position 0.6s ease;
+}
+
+.prev-btn:hover {
+  background-position: right;
+}
+
+.next-btn {
+  padding-right: 5svh;
+  background-size: 300%;
+  background-image: linear-gradient(to left, var(--color-bg) 35%, var(--card-color), var(--color-bg));
+  background-position: right;
+  transition: background-position 0.6s ease;
+}
+
+.next-btn:hover {
+  background-position: left;
+}
+
+.active {
+  display: block;
+}
+
+.ani__link {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.ani__link::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--accent-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.ani__link:hover::after {
+  opacity: 1;
+}
+
+/* .slide-out {
+  animation: slide-out 0.6 ease;
+} */
+
+.contacts-container {
   margin: var(--margin);
   display: flex;
   flex-direction: column;
@@ -343,7 +454,7 @@ main {
   align-content: center;
 }
 
-.contacts h1 {
+.contacts-container h2 {
   text-align: center;
 }
 
@@ -374,7 +485,7 @@ main {
   flex-wrap: wrap;
 }
 
-.contacts__item h3 {
+.contacts__item h4 {
   color: var(--accent-color);
   padding-bottom: 1svh;
 }
@@ -410,7 +521,7 @@ main {
   position: absolute;
   top: 10svh;
   right: 1svh;
-  font-size: 40px;
+  font-size: 2.25rem;
   font-weight: 900;
   color: var(--color-2);
   cursor: pointer;
@@ -427,13 +538,13 @@ main {
 }
 
 .footer__nav {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 5svh;
 }
 
 .reference {
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 .svg:hover {
@@ -485,6 +596,12 @@ main {
   color: var(--effect-color);
 }
 
+#about {
+  background-color: var(--card-color);
+  margin: 0;
+  padding: 5svh  0;
+}
+
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -496,6 +613,38 @@ main {
     transform: translateY(0px) scale(1);
   }
 }
+
+/* @keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(50%) scale(0.7);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.7);
+  }
+} */
 
 @media (max-width:1000px) {
   img {
@@ -534,7 +683,7 @@ main {
   }
 
   a.btn {
-    font-size: 12px;
+    font-size: 0.66rem;
   }
 
   .popup span {

@@ -1,25 +1,3 @@
-function myPopup(certificateId) {
-    var imgSrc = ""
-
-    document.querySelector(".popup").style.display = "block";
-    switch(certificateId) {
-      case "comptia":
-        imgSrc = "certificates/comptia-certificate.jpg";
-        break;
-      case "azure":
-        imgSrc = "certificates/azure-fundamentals.jpg";
-        break;
-      case "ms365":
-      imgSrc = "certificates/ms365-fundamentals.jpg";
-        break;
-    }
-    document.querySelector(".popup img").src = imgSrc;
-  }
-
-function closePopup() {
-  document.querySelector(".popup").style.display = "none";
-}
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -51,3 +29,40 @@ document.addEventListener("keydown", function(event) {
     closePopup();
   }
 })
+
+function myPopup(certificateId) {
+  var imgSrc = ""
+
+  document.querySelector(".popup").style.display = "block";
+  switch(certificateId) {
+    case "comptia":
+      imgSrc = "certificates/comptia-certificate.jpg";
+      break;
+    case "azure":
+      imgSrc = "certificates/azure-fundamentals.jpg";
+      break;
+    case "ms365":
+    imgSrc = "certificates/ms365-fundamentals.jpg";
+      break;
+  }
+  document.querySelector(".popup img").src = imgSrc;
+}
+
+function closePopup() {
+document.querySelector(".popup").style.display = "none";
+}
+
+let slides = document.querySelectorAll(".project");
+let index = 0;
+
+function next() {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}
+
+function prev() {
+  slides[index].classList.remove("active");
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add("active");
+}
